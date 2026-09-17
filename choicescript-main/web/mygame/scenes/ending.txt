@@ -1,0 +1,170 @@
+You have finished this demo scenario! Here are your final stats:
+
+*temp invertebrates_text
+*if invertebrates = 0
+  *set invertebrates_text "Thriving"
+  *goto amphibians
+*elseif invertebrates = 1
+  *set invertebrates_text "Mildly stressed"
+  *goto amphibians
+*elseif invertebrates = 2
+  *set invertebrates_text "Moderately stressed"
+  *goto amphibians
+*elseif invertebrates = 3
+  *set invertebrates_text "On the verge of collapse"
+  *goto amphibians
+*else
+  *set invertebrates_text "Collapsed"
+*label amphibians
+
+*temp amphibians_text
+*if amphibians = 0
+  *set amphibians_text "Thriving"
+  *goto fish
+*elseif amphibians = 1
+  *set amphibians_text "Mildly stressed"
+  *goto fish
+*elseif amphibians = 2
+  *set amphibians_text "Moderately stressed"
+  *goto fish
+*elseif amphibians = 3
+  *set amphibians_text "On the verge of collapse"
+  *goto fish
+*else
+  *set amphibians_text "Collapsed"
+*label fish
+
+*temp fish_text
+*if fish = 0
+  *set fish_text "Thriving"
+  *goto mammals
+*elseif fish = 1
+  *set fish_text "Mildly stressed"
+  *goto mammals
+*elseif fish = 2
+  *set fish_text "Moderately stressed"
+  *goto mammals
+*elseif fish = 3
+  *set fish_text "On the verge of collapse"
+  *goto mammals
+*else
+  *set fish_text "Collapsed"
+*label mammals
+
+*temp mammals_text
+*if mammals = 0
+  *set mammals_text "Thriving"
+  *goto vegetation
+*elseif mammals = 1
+  *set mammals_text "Mildly stressed"
+  *goto vegetation
+*elseif mammals = 2
+  *set mammals_text "Moderately stressed"
+  *goto vegetation
+*elseif mammals = 3
+  *set mammals_text "On the verge of collapse"
+  *goto vegetation
+*else
+  *set mammals_text "Collapsed"
+*label vegetation
+
+*temp vegetation_text
+*if vegetation = 0
+  *set vegetation_text "Thriving"
+  *goto soil
+*elseif vegetation = 1
+  *set vegetation_text "Mildly stressed"
+  *goto soil
+*elseif vegetation = 2
+  *set vegetation_text "Moderately stressed"
+  *goto soil
+*elseif vegetation = 3
+  *set vegetation_text "On the verge of collapse"
+  *goto soil
+*else
+  *set vegetation_text "Collapsed"
+*label soil
+
+*temp soil_text
+*if soil = 0
+  *set soil_text "Thriving"
+  *goto groundwater
+*elseif soil = 1
+  *set soil_text "Mildly stressed"
+  *goto groundwater
+*elseif soil = 2
+  *set soil_text "Moderately stressed"
+  *goto groundwater
+*elseif soil = 3
+  *set soil_text "On the verge of collapse"
+  *goto groundwater
+*else
+  *set soil_text "Collapsed"
+*label groundwater
+
+*temp groundwater_text
+*if groundwater = 0
+  *set groundwater_text "Thriving"
+  *goto streams
+*elseif groundwater = 1
+  *set groundwater_text "Mildly stressed"
+  *goto streams
+*elseif groundwater = 2
+  *set groundwater_text "Moderately stressed"
+  *goto streams
+*elseif groundwater = 3
+  *set groundwater_text "On the verge of collapse"
+  *goto streams
+*else
+  *set groundwater_text "Collapsed"
+*label streams
+
+*temp streams_text
+*if streams = 0
+  *set streams_text "Thriving"
+  *goto wetlands
+*elseif streams = 1
+  *set streams_text "Mildly stressed"
+  *goto wetlands
+*elseif streams = 2
+  *set streams_text "Moderately stressed"
+  *goto wetlands
+*elseif streams = 3
+  *set streams_text "On the verge of collapse"
+  *goto wetlands
+*else
+  *set streams_text "Collapsed"
+*label wetlands
+
+*temp wetlands_text
+*if wetlands = 0
+  *set wetlands_text "Thriving"
+  *goto chart
+*elseif wetlands = 1
+  *set wetlands_text "Mildly stressed"
+  *goto chart
+*elseif wetlands = 2
+  *set wetlands_text "Moderately stressed"
+  *goto chart
+*elseif wetlands = 3
+  *set wetlands_text "On the verge of collapse"
+  *goto chart
+*else
+  *set wetlands_text "Collapsed"
+*label chart
+
+*stat_chart
+  percent community Community Support
+  percent funds Funding
+  text wetlands_text Wetlands
+  text streams_text Streams
+  text groundwater_text Groundwater
+  text soil_text Soil Health
+  text vegetation_text Vegetation
+  text mammals_text Mammals
+  text fish_text Fish
+  text amphibians_text Amphibians
+  text invertebrates_text Invertebrates
+
+
+*ending

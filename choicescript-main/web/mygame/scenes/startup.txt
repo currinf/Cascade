@@ -1,0 +1,44 @@
+*title Cascade
+*author Andrew Byerly, Ella Sloat, Flannery Currin, Anjali Fernandes
+*scene_list
+  startup
+  flood
+  ending
+
+*create wetlands 0
+*create streams 0
+*create groundwater 0
+*create soil 0
+*create vegetation 0
+*create mammals 0
+*create fish 0
+*create amphibians 0
+*create invertebrates 0
+*create community 50
+*create funds 50
+*create dams true
+
+Welcome to Cascade!
+
+This is a demo of a decision-tree based scenario and its impacts on an ecosystem loosely inspired by 
+the Bio Reserve at Denison University.  
+
+*page_break
+
+There is a stream near the community you live in. Recently, a colony of beavers have moved in and constructed 
+dams along the stream channel. Vocal members of the community are now worried about potential flooding. You
+could organize a team to clear out the beaver dams. 
+
+*choice
+  #Leave the beavers alone.
+    You leave the beavers alone. Members of the community are unhappy with this choice.
+    *set community -10
+    *set dams true
+    *finish
+  #Remove the dams.
+    Members of the community are happy the beavers are gone. Still, you wonder if this was the best
+    choice long-term.
+    *set community +10
+    *set mammals +1
+    *set dams false
+    *finish

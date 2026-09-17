@@ -1,0 +1,15 @@
+A series of storms causes floods in the area.
+*if dams
+   The beaver ponds and the new wetlands around them trap sediment moved by 
+   floodwater and clarify the water moving downstream. The amphibian 
+   population remains stable.
+   *finish
+Without dams to trap sediment, large volumes of sediment are mobilized by 
+floodwaters. Amphibians who rely on clear, moving water to breathe are 
+adversely impacted. Sediment and organic debris transported downstream bury 
+amphibian nests, dramatically reducing survival rates and recruitment for 
+the next year.
+*set amphibians +1
+*set streams +1
+*finish
+
