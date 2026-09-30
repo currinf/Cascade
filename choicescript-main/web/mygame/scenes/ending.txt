@@ -11,7 +11,7 @@ You have finished this demo scenario! Here are your final stats:
   *set invertebrates_text "Moderately stressed"
   *goto amphibians
 *elseif invertebrates = 3
-  *set invertebrates_text "On the verge of collapse"
+  *set invertebrates_text "Critical"
   *goto amphibians
 *else
   *set invertebrates_text "Collapsed"
@@ -28,7 +28,7 @@ You have finished this demo scenario! Here are your final stats:
   *set amphibians_text "Moderately stressed"
   *goto fish
 *elseif amphibians = 3
-  *set amphibians_text "On the verge of collapse"
+  *set amphibians_text "Critical"
   *goto fish
 *else
   *set amphibians_text "Collapsed"
@@ -45,7 +45,7 @@ You have finished this demo scenario! Here are your final stats:
   *set fish_text "Moderately stressed"
   *goto mammals
 *elseif fish = 3
-  *set fish_text "On the verge of collapse"
+  *set fish_text "Critical"
   *goto mammals
 *else
   *set fish_text "Collapsed"
@@ -62,7 +62,7 @@ You have finished this demo scenario! Here are your final stats:
   *set mammals_text "Moderately stressed"
   *goto vegetation
 *elseif mammals = 3
-  *set mammals_text "On the verge of collapse"
+  *set mammals_text "Critical"
   *goto vegetation
 *else
   *set mammals_text "Collapsed"
@@ -79,7 +79,7 @@ You have finished this demo scenario! Here are your final stats:
   *set vegetation_text "Moderately stressed"
   *goto soil
 *elseif vegetation = 3
-  *set vegetation_text "On the verge of collapse"
+  *set vegetation_text "Critical"
   *goto soil
 *else
   *set vegetation_text "Collapsed"
@@ -96,7 +96,7 @@ You have finished this demo scenario! Here are your final stats:
   *set soil_text "Moderately stressed"
   *goto groundwater
 *elseif soil = 3
-  *set soil_text "On the verge of collapse"
+  *set soil_text "Critical"
   *goto groundwater
 *else
   *set soil_text "Collapsed"
@@ -113,7 +113,7 @@ You have finished this demo scenario! Here are your final stats:
   *set groundwater_text "Moderately stressed"
   *goto streams
 *elseif groundwater = 3
-  *set groundwater_text "On the verge of collapse"
+  *set groundwater_text "Critical"
   *goto streams
 *else
   *set groundwater_text "Collapsed"
@@ -130,7 +130,7 @@ You have finished this demo scenario! Here are your final stats:
   *set streams_text "Moderately stressed"
   *goto wetlands
 *elseif streams = 3
-  *set streams_text "On the verge of collapse"
+  *set streams_text "Critical"
   *goto wetlands
 *else
   *set streams_text "Collapsed"
@@ -147,7 +147,7 @@ You have finished this demo scenario! Here are your final stats:
   *set wetlands_text "Moderately stressed"
   *goto chart
 *elseif wetlands = 3
-  *set wetlands_text "On the verge of collapse"
+  *set wetlands_text "Critical"
   *goto chart
 *else
   *set wetlands_text "Collapsed"

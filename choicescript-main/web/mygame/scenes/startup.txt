@@ -3,9 +3,10 @@
 *scene_list
   startup
   flood
+  scene
   ending
 
-*create wetlands 0
+*create wetlands 1
 *create streams 0
 *create groundwater 0
 *create soil 0
